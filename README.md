@@ -42,7 +42,7 @@ Follow the prompts to enter your player ID (without the `#`) and navigate throug
 
             TOOL BY ROHIT M R
 
-Enter your Clash Royale Player ID (without the #): V2RJUGOP
+Enter your Clash Royale Player ID (without the #):
 
 === Clash Royale Stats Menu ===
 1. View Player Stats
