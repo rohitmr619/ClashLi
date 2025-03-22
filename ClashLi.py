@@ -2,6 +2,7 @@ import requests
 import argparse
 import time
 from tabulate import tabulate
+import yaml
 
 def print_ascii_art():
     print(r"""
@@ -17,7 +18,9 @@ def print_ascii_art():
     """)
 
 def get_player_stats(player_id):
-    api_token = "TOKEN"  # Replace this with your actual API token
+    with open("config.yaml", "r") as file:
+        data = yaml.safe_load(file)
+    api_token = data['clash_royale_token']
     url = f"https://api.clashroyale.com/v1/players/%23{player_id}"  # '#' is URL-encoded as '%23'
     headers = {"Authorization": f"Bearer {api_token}"}
     
