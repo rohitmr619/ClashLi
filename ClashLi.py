@@ -17,7 +17,7 @@ def print_ascii_art():
     """)
 
 def get_player_stats(player_id):
-    api_token = "TOKEN"  # Replace this with your actual API token
+    api_token = "YOUR_API_TOKEN"  # Replace this with your actual API token
     url = f"https://api.clashroyale.com/v1/players/%23{player_id}"  # '#' is URL-encoded as '%23'
     headers = {"Authorization": f"Bearer {api_token}"}
     
